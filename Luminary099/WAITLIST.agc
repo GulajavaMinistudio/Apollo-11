@@ -25,7 +25,7 @@
 #
 # Notations on the hardcopy document read, in part:
 #
-#	Assemble revision 001 of AGC program LMY99 by NASA 2021112-61
+#	Assemble revision 001 of AGC program LMY99 by NASA 2021112-061
 #	16:27 JULY 14, 1969
 
 # Page 1117
@@ -559,6 +559,6 @@ TSKOVCDR	GENADR	TASKOVER
 LONGP00H	DXCH	LONGEXIT
 		TCF	+2
 WAITP00H	DXCH	WAITEXIT
- +2		TC	P00DOO1
+ +2		TC	POODOO1
 		OCT	01204
 
