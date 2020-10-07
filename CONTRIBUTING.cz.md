@@ -1,7 +1,7 @@
-# Katkıda Bulunma
+# Contributing
 
 🎌
-[Čeština][CZ],
+**Čeština**
 [Deutsch][DE],
 [English][EN],
 [Español][ES],
@@ -9,7 +9,7 @@
 [Kurdi][KU],
 [Nederlands][NL],
 [Português][PT_BR],
-**Türkçe**,
+[Türkçe][TR],
 [العربية][AR],
 [日本語][JA],
 [正體中文][ZH_TW],
@@ -31,14 +31,14 @@
 [ZH_CN]:CONTRIBUTING.zh_cn.md
 [ZH_TW]:CONTRIBUTING.zh_tw.md
 
-Bu repodaki kaynak kodu kağıt çıktılarından elle dijitalleştirilmiştir. Yani yazım hataları ve diğer tutarsızlıklar yanlışlıkla yapılmıştır. Kod, aşağıdaki taratılmış çıktılar ile tutarlı olması için düzenlenmelidir:
+Zdrojové kódy v tomto repozitáři byly manuálně digitalizovány z papírových zdrojových materiálů, mohou se v nich tedy vyskytovat chyby a překlepy. Kód by měl být modifikován tak, aby byl konzistentní se zdrojovým skenem:
 
 - [AGC printouts for Comanche][8]
 - [AGC printouts for Luminary][9]
 
-## Yararlı Eklentiler
+## Užitečná rozšíření
 
-Github, AGC assembly dili için sentaks desteği sağlıyor ama sizin kodu düzenlemek için kullandığınız editör sağlamayacaktır. Aşağıdaki editörler AGC dili sentaks vurgulaması için eklentiler sunmaktadır:
+GitHub podporuje syntaxi AGC assembly jazyka. Váš editor pravděpodobně podporu mít nebude, proto zde poskytujeme seznam rozšíření na zvýraznění syntaxe jazyka AGC pro následující editory:
 
 - [Atom][Atom]†
 - [CodeBlocks][CodeBlocks]
@@ -51,7 +51,7 @@ Github, AGC assembly dili için sentaks desteği sağlıyor ama sizin kodu düze
 - [Visual Studio Code][VisualStudioCode]†
 - [jEdit][jEdit]
 
-† Otomatik biçimlendirmeyi destekler
+† Podporuje automatické formátování
 
 [Atom]:https://github.com/Alhadis/language-agc
 [CodeBlocks]:https://github.com/virtualagc/virtualagc/tree/master/Contributed/SyntaxHighlight/CodeBlocks
@@ -64,32 +64,32 @@ Github, AGC assembly dili için sentaks desteği sağlıyor ama sizin kodu düze
 [VisualStudioCode]:https://github.com/wopian/agc-assembly
 [jEdit]:https://github.com/virtualagc/virtualagc/tree/master/Contributed/SyntaxHighlight/jEdit
 
-## Biçimlendirme
+## Formátování
 
-**Not:** GitHub ve yukarıdaki 3 eklenti otomatik olarak doğru biçimlendirmeyi kullanmanızı sağlayacaktır.
+**Poznámka:** GitHub a výše uvedená rozšíření zajistí automatické použití správného formátování.
 
-- Girintilemeyi tab ile yapın
-- Tab genişliği olarak 8'i kullanın
-- Devamındaki boşlukları silin
+- Odsazení s použitím tabů
+- Šířka tabu je 8
+- Nezanechávat bílé znaky (whitespace) na konci řádků
 
-## Neyi kontrol edeyim?
+## Co mám kontrolovat?
 
-Taratılmış çıktılar ve bu repodaki kaynak kodu arasındaki aşağıdakileri kapsayan herhangi bir tutarsızlığı:
+Jakékoliv rozdíly mezi skeny a zdrojovým kódem v tomto repozitáři, včetně:
 
-### Yorumlar
+### Komentářů
 
-- Uyarlanan koddaki yorum satırları, çıktılar ile tamamen eşleşmelidir
-  - Bu bilerek yazım hatası koymayı veya bir yorumun tamamını kaldırıp/eklemeyi içerebilir.
+- Komentáře v přepsaném kódu by měly přesně odpovídat skenům
+  - Toto může zahrnovat doslovné kopírování překlepů či přidávání/odebírání celých komentářů
 
-### Satır sonları
+### Zalomení řádků
 
-- Birinci sütunu `R0000` *ile* biten satır sonları çıktılar ile tamamen eşleşmelidir.
-- Birinci sütunu `R0000` *__olmadan__* biten satır sonları arka arkaya sadece 1 ya da 2 boş satır içermelidir.
-  - Eğer 2'den fazla satır sonu varsa ekstra olan satır sonlarını kaldırın.
-    - Birinci sütunu `R0000` *ile* biten satırlar bu kural dahilinde değildir.
-  - Kaynak resimlerde bunlar 8. satırındaki basamak bastırılmamış halde oluşturulmuştur. Bir 2 kullanımı iki boşluğu (tek boş satırı) temsil ederken, bir 3 kullanımı üç boşluğu (iki boş satırı) ifade eder. 4 ve 8 tanımlanmıştır fakat hiç kullanılmamıştır. Bunun hakkında daha fazla okumak için: [#159][7].
+- Zalomení řádků *obsahujících* `R0000` ve sloupci 1 by měly přesně odpovídat skenům.
+- Zalomení řádků *__bez__* `R0000` ve sloupci 1 by měly obsahovat jen 1 až 2 prázdné řádky v řadě
+  - Pokud obsahují více než dva prázdné řádky, přebytečné odstraňte.
+    - Řádky obsahující `R0000` v prvním sloupci se do tohoto nepočítají.
+  - Vznikly díky nevytištěnému číslu ve sloupci 8 zdrojových dokumentů. Číslo 2 způsobilo vypsání dvojité mezery (jeden prázdný řádek) a číslo 3 trojité mezery (dva prázdné řádky). Hodnoty 4-8 byly definovány, ale nebyly použity. Více v [#159][7]
 
-Örneğin bu:
+Napříkald následující kód:
 
 ```plain
 R0819   SUBROUTINE TO SKIP...
@@ -100,7 +100,7 @@ R0820
  0821   LAMPTEST  CS  IMODES33
 ```
 
-Buna dönüşmeli:
+By měl být změněn na:
 
 ```plain
 R0819   SUBROUTINE TO SKIP...
@@ -110,30 +110,30 @@ R0820
  0820   LAMPTEST  CS  IMODES33
 ```
 
-### Boşluklar
+### Mezery
 
-- Bir string'deki iki karakterin arasındaki boşluklar şu kurallara uymalıdır ([#316][10]'daki tartışmayı inceleyin):
-  - Yeni kelimeler arası tek boşluk.
-  - Yeni cümleler arası iki boşluk.
-  - Yeni girintiler için üç boşluk.
+- Mezery mezi dvěma znaky v řetězci by měly respektovat tyto konvence (viz diskuze v [#316][10]):
+  - Jedna mezera pro nová slova.
+  - Dvě mezery pro nové věty.
+  - Tři mezery pro odsazení.
 
-Örneğin bu:
+Napříkald následující kód:
 
 ```plain
 	1)  FOO BAR BAZ QUX QUUX QUUZ. CORGE, GRAULT,
 	GARPLY, WALDO.
 ```
 
-Buna dönüşmeli:
+By měl být změněn na:
 
 ```plain
 	1) FOO BAR BAZ QUX QUUX QUUZ.  CORGE, GRAULT,
 	   GARPLY, WALDO.
 ```
 
-## Not
+## Poznámka
 
-PR yapmadan önce lütfen yaptığınız değişikliklerin çıktılar ile tutarlı olduğundan emin olun!
+Než otevřete PR, ujistěte se že vaše změny jsou konzistentní se skeny!
 
 [0]:https://github.com/chrislgarry/Apollo-11/pull/new/master
 [1]:http://www.ibiblio.org/apollo/ScansForConversion/Luminary099/

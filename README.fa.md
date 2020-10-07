@@ -10,12 +10,13 @@
 🎌
 [Bahasa Indonesia][ID]،
 [Català][CA]،
+[Čeština][CZ]،
 [Deutsch][DE]،
 [English][EN]،
 [Español][ES]،
 [Français][FR]،
 [Italiano][IT]،
-[Kurdi][KU],
+[Kurdi][KU]،
 [Nederlands][NL]،
 [Polski][PL]،
 [Português][PT_BR]،
@@ -36,6 +37,7 @@
 [AR]:README.ar.md
 [BD_BN]:README.bd_bn.md
 [CA]:README.ca.md
+[CZ]:README.cz.md
 [DE]:README.de.md
 [EN]:README.md
 [ES]:README.es.md

@@ -7,6 +7,7 @@
 
 🎌
 [Bahasa Indonesia][ID],
+[Čeština][CZ],
 **Català**,
 [Deutsch][DE],
 [English][EN],
@@ -34,6 +35,7 @@
 [AR]:README.ar.md
 [BD_BN]:README.bd_bn.md
 [CA]:README.ca.md
+[CZ]:README.cz.md
 [DE]:README.de.md
 [EN]:README.md
 [ES]:README.es.md
