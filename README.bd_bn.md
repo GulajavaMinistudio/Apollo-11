@@ -16,15 +16,18 @@
 [Italiano][IT],
 [Kurdi][KU],
 [Nederlands][NL],
+[Norsk][NO],
 [Polski][PL],
 [Português][PT_BR],
 [Română][RO],
 [Tiếng Việt][VI],
 [Türkçe][TR],
+[Ελληνικά][GR],
 [Русский][RU],
 [العربية][AR],
 [فارسی][FA],
 [हिंदी][HI_IN],
+[অসমীয়া][AS_IN],
 **বাংলা**,
 [မြန်မာ][MM],
 [日本語][JA],
@@ -33,6 +36,7 @@
 [한국어][KO_KR]
 
 [AR]:README.ar.md
+[AS_IN]:README.as_in.md
 [BD_BN]:README.bd_bn.md
 [CA]:README.ca.md
 [CZ]:README.cz.md
@@ -41,13 +45,17 @@
 [ES]:README.es.md
 [FA]:README.fa.md
 [FR]:README.fr.md
+[GR]:README.gr.md
 [HI_IN]:README.hi_in.md
 [ID]:README.id.md
 [IT]:README.it.md
 [JA]:README.ja.md
 [KO_KR]:README.ko_kr.md
 [KU]:README.ku.md
+[LT]:README.lt.md
 [MM]:README.mm.md
+[NL]:README.nl.md
+[NO]:README.no.md
 [PL]:README.pl.md
 [PT_BR]:README.pt_br.md
 [RO]:README.ro.md
@@ -56,7 +64,6 @@
 [VI]:README.vi.md
 [ZH_CN]:README.zh_cn.md
 [ZH_TW]:README.zh_tw.md
-[NL]:README.nl.md
 
 অ্যাপোলো ১১ গাইডেন্স কম্পিউটারের মূল ম্যানুয়াল (AGC), অ্যাপোলো ১১ কমান্ড মডিউল (Comanche055) এবং লুনার মডিউল (Luminary099)। এটি [Virtual AGC][3] এবং [MIT Museum][4] সদস্যদের দ্বারা সূচিত করা হয়েছে। আমাদের মূল লক্ষ্য অ্যাপোলো ১১ এর মূল কোডটি সংকলন করা। আপনি যদি এই বিরোধের প্রতিলিপি এবং [Luminary 099][5] এবং [Comanche 055][6] এর মধ্যে কোনও বৈষম্য উন্মোচন করেছেন, সেক্ষেত্রে আপনার সহযোগিতা PR হিসাবে প্রশংসিত হবে।
 
